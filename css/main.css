@@ -358,6 +358,7 @@ input.input100 {
   height: 100%;
   display: block;
   width: 100%;
+  border: transparent;
   background: transparent;
   font-family: Montserrat-Regular;
   font-size: 18px;
