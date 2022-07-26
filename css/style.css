@@ -1,0 +1,94 @@
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #ffff;
+  font-weight: 300; }
+
+p {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a, a:hover {
+    text-decoration: none !important; }
+
+.content {
+  padding: 5rem 0; }
+
+h2 {
+  font-size: 30px;
+  color: #1d3354; }
+
+.custom-table {
+  min-width: 500px; }
+  .custom-table thead tr, .custom-table thead th {
+    padding-bottom: 10px;
+    border-top: none;
+    border-bottom: none !important;
+    color: #6d9dc5;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: .2rem; }
+  .custom-table tbody th, .custom-table tbody td {
+    color: #1d3354;
+    font-weight: 500;
+    padding-bottom: 15px;
+    padding-top: 25px;
+    font-weight: 40;
+    border: none;
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    transition: .5s all ease; }
+    .custom-table tbody th small, .custom-table tbody td small {
+      color: rgba(155, 39, 227, 60);
+      font-weight: 300; }
+    .custom-table tbody th a, .custom-table tbody td a {
+      color: rgba(240, 123, 22, 70); }
+    .custom-table tbody th .more, .custom-table tbody td .more {
+      color: rgba(111, 186, 247, 50);
+      font-size: 15px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .1rem; }
+  .custom-table tbody tr {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+    .custom-table tbody tr:hover td, .custom-table tbody tr:focus td {
+      color: #10ebb4; }
+      .custom-table tbody tr:hover td a, .custom-table tbody tr:focus td a {
+        color: #10ebb4; }
+      .custom-table tbody tr:hover td .more, .custom-table tbody tr:focus td .more {
+        color: #10ebb4; }
+  .custom-table .td-box-wrap {
+    padding: 0; }
+  .custom-table .box {
+    background: #82ceb8;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+    .custom-table .box td, .custom-table .box th {
+      border: none !important; }
+.a {
+  font-family: "Roboto";
+  color: #1D3354;
+  font-size: 15px;
+  padding: 10px;
+  text-decoration: none;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 25px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  text-shadow: 1px 1px 3px #666666;
+  border: #e9fff9 2px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#e9fff9), to(#93fadd));
+  background: -moz-linear-gradient(top, #e9fff9, #93fadd);
+}
