@@ -1,5 +1,5 @@
 <?php
-    $serverName = "172.16.22.106, 1433";
+    $serverName = "192.168.100.52, 1433";
     $connectionInfo = array("Database"=>"JAAPA", "UID"=>"JAAPAPAM", "PWD"=>"123");
     $varrz=$_POST["razonsocial"];
     $varcalle=$_POST["calle"];
@@ -9,14 +9,13 @@
     $varnumext=$_POST["numeroext"];
     $varcp=$_POST["codpostal"];
     $varpais=$_POST["pais"];
-    $varnomcont=$_POST["nomcontacto"];
-
+    
     $conn = sqlsrv_connect( $serverName, $connectionInfo );
     if( $conn === false ) {
         die( print_r( sqlsrv_errors(), true));
     }
 
-    $sql = "exec sp_insertcliente ".$varrz.", ".$varcalle.", ".$vartel.", ".$varcolonia.", ".$varnumint.", ".$varnumext.", ".$varcp.", ".$varpais.", ".$varnomcont;
+    $sql = "exec sp_insertcliente ".$varrz.", ".$varcalle.", ".$vartel.", ".$varcolonia.", ".$varnumint.", ".$varnumext.", ".$varcp.", ".$varpais;
     $stmt = sqlsrv_query( $conn, $sql );
     if( $stmt === false) {
         die( print_r( sqlsrv_errors(), true) );
