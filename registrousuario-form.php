@@ -12,7 +12,7 @@
     $vartel=$_POST["telefono"];
     $varnumext=$_POST["numeroext"];
     $varnumint=$_POST["numeroint"];
-    $varcolonia=$_POST["colonia"];
+    $varcol=$_POST["colonia"];
     $varcp=$_POST["codpostal"];
     $varpais=$_POST["pais"];
     
@@ -20,8 +20,10 @@
     if( $conn === false ) {
         die( print_r( sqlsrv_errors(), true));
     }
-    // el exec esta mal brou, checa las variables
-    $sql = "exec sp_insertusuario ".$varrz.", ".$varcalle.", ".$vartel.", ".$varcolonia.", ".$varnumint.", ".$varnumext.", ".$varcp.", ".$varpais;
+
+    $sql = "exec sp_insertusuario ".$varuser.", ".$varpass.", ".$varnom.", ".$varap.", ".$varam.", ".$varfecnac.", 
+    ".$varpuesto.", ".$varcalle", ".$vartel.", ".$varnumext.", ".$varnumint.", ".$varcol.", ".$varcp", ".$varpais;
+    
     $stmt = sqlsrv_query( $conn, $sql );
     if( $stmt === false) {
         die( print_r( sqlsrv_errors(), true) );
