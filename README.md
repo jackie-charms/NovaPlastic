@@ -2,38 +2,50 @@
 Proyecto USB - 3er Cuatrimestre
 
 Necesitamos hacer todas estas pantallas para tener completo el proyecto:
-  1. Index - Ingreso de usuarios (index.html)
+    1. Ingreso (login-usuarios.html)
   
   
   Capturista
   
-    2. Menú - Capturista (menu-cap.html)
+    2. Menú (menu-cap.html)
     
-    3. Tabla Clientes - Capturista (tablaclientes-cap.html)
+    3. Tabla Clientes (tablaclientes-cap.html)
     
-    4. Tabla Ventas - Capturista (tablaventas-cap.html)
+    4. Tabla Ventas (tablaventas-cap.html)
+    
+    5. Registro Cliente (registrocliente-cap.html)
+    
+    6. Registro Venta (registroventa-cap.html)
     
     
   Supervisor
   
-    5. Menú - Supervisor (menu-sup.html)
+    7. Menú (menu-sup.html)
     
-    6. Tabla Clientes - Supervisor (tablaclientes-sup.html)
+    8. Tabla Clientes (tablaclientes-sup.html)
     
-    7. Tabla Ventas - Supervisor (tablaventas-sup.html)
+    9. Tabla Ventas (tablaventas-sup.html)
+    
+    10. Editar Cliente (editarcliente-sup.html)
+    
+    11. Editar Venta (editarventa-sup.html)
     
     
   Director
   
-    8. Menú - Director (menu-dir.html)
+    12. Menú (menu-dir.html)
     
-    9. Tabla Clientes - Director (tablaclientes-dir.html)
+    13. Tabla Clientes (tablaclientes-dir.html)
     
-    10. Tabla Ventas - Director (tablaventas-dir.html)
+    14. Tabla Ventas (tablaventas-dir.html)
     
-    11. Tabla Reporte - Director (tablareportes-dir.html)
+    15. Tabla Reporte (tablareportes-dir.html)
     
-    12. Tabla Usuarios - Director (tablausuarios-dir.html)
+    16. Tabla Usuarios (tablausuarios-dir.html)
+    
+    17. Registro Usuarios (registrousuario-dir.html)
+    
+    18. Editar Usuario (editarusuario-dir.html)
     
     
 Todas las páginas de HTML tienen la terminación de el usuario que va a utilizarlas.
