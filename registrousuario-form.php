@@ -20,7 +20,7 @@
     if( $conn === false ) {
         die( print_r( sqlsrv_errors(), true));
     }
-
+    // el exec esta mal brou, checa las variables
     $sql = "exec sp_insertusuario ".$varrz.", ".$varcalle.", ".$vartel.", ".$varcolonia.", ".$varnumint.", ".$varnumext.", ".$varcp.", ".$varpais;
     $stmt = sqlsrv_query( $conn, $sql );
     if( $stmt === false) {
