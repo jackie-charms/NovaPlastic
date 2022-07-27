@@ -23,11 +23,7 @@
     <div class="container-login100">
       <div class="wrap-login100">
         <form class="login100-form validate-form" action="profile.html" method="post">
-          <input type="hidden" name="nick" value="<?php echo $usuario; ?>">
-          <input type="hidden" name="pass" value="<?php echo $contra; ?>">
-          <span class="login100-form-title p-b-43">
-            Registro de clientes!
-          </span>
+          <span class="login100-form-title p-b-43">Registro de clientes!</span>
 <?php
     $serverName = "192.168.100.52, 1433";
     $connectionInfo = array("Database"=>"JAAPA", "UID"=>"JAAPAPAM", "PWD"=>"123");
