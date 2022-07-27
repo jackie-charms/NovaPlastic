@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Inicio de sesión</title>
+  <title>Registro de clientes</title>
   <!--     Fonts and icons     -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="images/icons/casa.png"/>
+  <link rel="icon" type="image/png" href="images/icons/registro.png"/>
   <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
@@ -31,7 +31,7 @@
 <?php
     $serverName = "192.168.100.52, 1433";
     $connectionInfo = array("Database"=>"JAAPA", "UID"=>"JAAPAPAM", "PWD"=>"123");
-<<<<<<< HEAD
+
     $varrz = $_POST["razonsocial"];
     $varcalle = $_POST["calle"];
     $vartel = $_POST["telefono"];
@@ -42,17 +42,6 @@
     $varpais = $_POST["pais"];
     $varnomcont = $_POST["nomcontacto"];
 
-=======
-    $varrz=$_POST["razonsocial"];
-    $varcalle=$_POST["calle"];
-    $vartel=$_POST["telefono"];
-    $varcolonia=$_POST["colonia"];
-    $varnumint=$_POST["numeroint"];
-    $varnumext=$_POST["numeroext"];
-    $varcp=$_POST["codpostal"];
-    $varpais=$_POST["pais"];
-    
->>>>>>> 56cc1b90eb867a54000fa67d1445fa314ae67fd9
     $conn = sqlsrv_connect( $serverName, $connectionInfo );
     if( $conn === false ) {
         die( print_r( sqlsrv_errors(), true));
@@ -72,11 +61,11 @@
 ?>
 <br>
           <div class="container-login100-form-btn">
-            <button class="login100-form-btn" action="tablaclientes-cap.html">Ingresar</button>
+            <a class="login100-form-btn" href="tablaclientes-cap.html">Ingresar</a>
           </div>
         </form>
 
-        <div class="login100-more" style="background-image: url('https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');">
+        <div class="login100-more" style="background-image:url('https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80')">
         </div>
       </div>
     </div>
