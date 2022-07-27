@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Inicio de sesión</title>
+  <title>Registro de clientes</title>
   <!--     Fonts and icons     -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="images/icons/casa.png"/>
+  <link rel="icon" type="image/png" href="images/icons/registro.png"/>
   <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
@@ -61,7 +61,7 @@
 ?>
 <br>
           <div class="container-login100-form-btn">
-            <button class="login100-form-btn" action="tablaclientes-cap.html">Ingresar</button>
+            <a class="login100-form-btn" href="tablaclientes-cap.html">Ingresar</a>
           </div>
         </form>
 
