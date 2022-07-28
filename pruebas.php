@@ -10,13 +10,14 @@
     <?php
     $serverName = "192.168.137.116, 1433";
     $connectionInfo = array("Database"=>"JAAPA", "UID"=>"JAAPAPAM", "PWD"=>"123");
-    $varusu=$_POST["usuario"];
-    $varpwd=$_POST["contra"];
 
     $conn = sqlsrv_connect( $serverName, $connectionInfo );
     if( $conn === false ) {
         die( print_r( sqlsrv_errors(), true));
     }
+
+    $varusu=$_POST["usuario"];
+    $varpwd=$_POST["contra"];
 
     $sql="exec sp_valida ".$varusu.", ".$varpwd;
     $stmt=sqlsrv_query( $conn, $sql);

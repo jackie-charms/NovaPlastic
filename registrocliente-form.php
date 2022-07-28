@@ -19,11 +19,11 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body style="background-color: #e9fff9;">
-  <div class="limiter">
+  <!-- <div class="limiter">
     <div class="container-login100">
       <div class="wrap-login100">
         <form class="login100-form validate-form" action="profile.html" method="post">
-          <span class="login100-form-title p-b-43">Registro de clientes</span>
+          <span class="login100-form-title p-b-43">Registro de clientes</span> -->
 <?php
     $serverName = "192.168.137.116, 1433";
     $connectionInfo = array("Database"=>"JAAPA", "UID"=>"JAAPAPAM", "PWD"=>"123");
@@ -55,7 +55,7 @@
 
     sqlsrv_free_stmt( $stmt);
 ?>
-<br>
+<!-- <br>
           <div class="container-login100-form-btn">
             <a class="login100-form-btn" href="tablaclientes-cap.html">Ingresar</a>
           </div>
@@ -65,7 +65,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   
   <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
   <script src="vendor/animsition/js/animsition.min.js"></script>
