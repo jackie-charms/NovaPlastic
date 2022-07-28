@@ -29,7 +29,6 @@
     $connectionInfo = array("Database"=>"JAAPA", "UID"=>"JAAPAPAM", "PWD"=>"123");
     
     $varrz = $_POST["razonsocial"];
-    echo $varrz;
     $varcalle = $_POST["calle"];
     $vartel = $_POST["telefono"];
     $varcolonia = $_POST["colonia"];
