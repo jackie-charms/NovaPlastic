@@ -23,13 +23,12 @@
     <div class="container-login100">
       <div class="wrap-login100">
         <form class="login100-form validate-form" action="profile.html" method="post">
-          <span class="login100-form-title p-b-43">Registro de clientes!</span>
+          <span class="login100-form-title p-b-43">Registro de clientes</span>
 <?php
     $serverName = "172.16.22.106, 1433";
     $connectionInfo = array("Database"=>"JAAPA", "UID"=>"JAAPAPAM", "PWD"=>"123");
     
     $varrz = $_POST["razonsocial"];
-    echo $varrz;
     $varcalle = $_POST["calle"];
     $vartel = $_POST["telefono"];
     $varcolonia = $_POST["colonia"];
