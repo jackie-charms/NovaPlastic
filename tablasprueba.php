@@ -28,10 +28,16 @@
         <table class="table table-striped custom-table">
           <thead>
             <tr> 
-              <th scope="col">Empresa</th>
-              <th scope="col">Contacto</th>
-              <th scope="col">Dirección</th>
+              <th scope="col">Id</th>
+              <th scope="col">Razón Social</th>
+              <th scope="col">Calle</th>
               <th scope="col">Teléfono</th>
+              <th scope="col">Colonia</th>
+              <th scope="col">Número Interior</th>
+              <th scope="col">Número Exterior</th>
+              <th scope="col">Codigo Postal</th>
+              <th scope="col">Pais</th>
+              <th scope="col">Borrar</th>
             </tr>
           </thead>
           <tbody>
@@ -53,19 +59,24 @@
                 printf("<tr><td>&nbsp;%s&nbsp;</td>
                             <td>&nbsp;%s&nbsp;</td>
                             <td>&nbsp;%s&nbsp;</td>
-                            <td><a href=\"bajareglibro.php?id=%d\">BORRAR</a></td>
+                            <td>&nbsp;%s&nbsp;</td>
+                            <td>&nbsp;%s&nbsp;</td>
+                            <td>&nbsp;%s&nbsp;</td>
+                            <td>&nbsp;%s&nbsp;</td>
+                            <td>&nbsp;%s&nbsp;</td>
+                            <td><a href=\"bajacliente.php?iempresa=%d\">BORRAR</a></td>
                         </tr>",
-                        $nreg["id"], $nreg["titulo"], $nreg["autor"], $nreg["id"]);
+                        $nreg["iempresa"], $nreg["razonsocial"], $nreg["calle"], $nreg["telefono"], $nreg["colonia"], 
+                        $nreg["numeroint"], $nreg["numeroext"], $nreg["codpostal"], $nreg["pais"], $nreg["iempresa"]);
             }
           ?>
-            <tr scope="row">
+            <!-- <tr scope="row">
               <td><IMG ALIGN=top width=50 height=50></td>
                       <td><a href="#">McDonald's</a></td>
                       <td>Jose Carillo Juarez <small class="d-block">CEO</small></td>
                       <td>Av. de los Insurgentes Sur 1457, Insurgentes Mixcoac, Benito Juárez, 03920 Ciudad de México, CDMX </td>
                       <td>55-7648-3392</td>
             </tr>
-            <!-- CONTACTO -->
             <tr scope="row">
               <td><IMG ALIGN=top width=50 height=50 SRC="images/icons/mc.png"></td>
                       <td><a href="#">McDonald's</a></td>
@@ -73,21 +84,18 @@
                       <td>Av. de los Insurgentes Sur 1457, Insurgentes Mixcoac, Benito Juárez, 03920 Ciudad de México, CDMX </td>
                       <td>55-7832-0933</td>
             </tr>
-            <!-- CEO -->
             <td><IMG ALIGN=top width=50 height=50 SRC="images/icons/star.png"></td>
               <td><a href="#">Starbucks Coffee</a></td>
               <td>Paulina Suarez Lopez<small class="d-block">CEO</small></td>
               <td>Eje 7 Sur Félix Cuevas, Av. Insurgentes Sur esq, Santa Cruz Atoyac, Benito Juárez, 03200 CDMX</td>
               <td>55 4635 3677</td>
             </tr>
-            <!-- CONTACTO -->
             <td><IMG ALIGN=top width=50 height=50 SRC="images/icons/star.png"></td>
               <td><a href="#">Starbucks Coffee</a></td>
               <td>Eduardo Salazar Camacho<small class="d-block">Contacto</small></td>
               <td>Eje 7 Sur Félix Cuevas, Av. Insurgentes Sur esq, Santa Cruz Atoyac, Benito Juárez, 03200 CDMX</td>
               <td>55 0022 2345</td>
             </tr>
-            <!-- CEO -->
             <tr>
               <td><IMG ALIGN=top width=50 height=50 SRC="images/icons/vi.png"></td>
               <td><a href="#">Vips</a></td>
@@ -95,7 +103,6 @@
               <td>Calz Acoxpa 744, Coapa, Col. San Bartolo Coapa, Tlalpan, 06700 Ciudad de México, CDMX</td>
               <td>55 0022 2345</td>
             </tr>
-            <!-- CONTACTO -->
             <tr>
               <td><IMG ALIGN=top width=50 height=50 SRC="images/icons/vi.png"></td>
               <td><a href="#">Vips</a></td>
@@ -103,7 +110,6 @@
               <td>Calz Acoxpa 744, Coapa, Col. San Bartolo Coapa, Tlalpan, 06700 Ciudad de México, CDMX</td>
               <td>55 0022 2345</td>
             </tr>
-            <!-- CEO -->
             <tr>
               <td><IMG ALIGN=top width=50 height=50 SRC="images/icons/chi.png"></td>
               <td><a href="#">Chili's</a></td>
@@ -111,7 +117,6 @@
               <td>Av. San Jerónimo 720, San Jerónimo Lídice, La Magdalena Contreras, 10200 Ciudad de México, CDMX</td>
               <td>55 0022 2345</td>
             </tr>
-            <!-- CONTACTO -->
             <tr>
               <td><IMG ALIGN=top width=50 height=50 SRC="images/icons/chi.png"></td>
               <td><a href="#">Chili's</a></td>
@@ -119,7 +124,6 @@
               <td>Av. San Jerónimo 720, San Jerónimo Lídice, La Magdalena Contreras, 10200 Ciudad de México, CDMX</td>
               <td>55 0022 2345</td>
             </tr>
-            <!-- CEO -->
             <tr>
               <td><IMG ALIGN=top width=50 height=50 SRC="images/icons/bu.png"></td>
               <td><a href="#">Burger King</a></td>
@@ -127,14 +131,13 @@
               <td>Prol. División del Nte. 5151, Paseos del Sur, Xochimilco, 16010 Ciudad de México, CDMX</td>
               <td>55 0022 2345</td>
             </tr>
-            <!-- CONTACTO -->
             <tr>
               <td><IMG ALIGN=top width=50 height=50 SRC="images/icons/bu.png"></td>
               <td><a href="#">Burger King</a></td>
               <td>Norma Gabriela Torres Fierro<small class="d-block">Contacto</small></td>
               <td>Prol. División del Nte. 5151, Paseos del Sur, Xochimilco, 16010 Ciudad de México, CDMX</td>
               <td>55 0022 2345</td>
-            </tr>
+            </tr> -->
           </tbody>
         </table>
         <br><br>
