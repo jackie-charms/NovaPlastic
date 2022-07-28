@@ -47,7 +47,13 @@
             }
 
             $sql = "SELECT * FROM Empresa";
-            $stmt=sqlsrv_query( $conn, $sql );
+            $sql2 = "exec sp_direccion ".$varrz.", "
+            $stmt=sqlsrv_query( $conn, $sql);
+            $stmt2=sqlsrv_query( $conn, $sql);
+
+            while( $row = sqlsrv_fetch_array( $stmt2, SQLSRV_FETCH_ASSOC) ) {
+                $direccion= $row['mensaje']."<br />";
+            }
 
             while ($nreg=sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC))
             {
@@ -57,8 +63,7 @@
                             <td>&nbsp;%s&nbsp;</td>
                             <td><a href=\"bajacliente.php?iempresa=%d\">BORRAR</a></td>
                         </tr>",
-                        $nreg["iempresa"], $nreg["razonsocial"], $nreg["calle"], $nreg["telefono"], $nreg["colonia"], 
-                        $nreg["numeroint"], $nreg["numeroext"], $nreg["codpostal"], $nreg["pais"], $nreg["iempresa"]);
+                        $nreg["iempresa"], $nreg["razonsocial"], $direccion, $nreg["telefono"], $nreg["iempresa"]);
             }
           ?>
             <!-- <tr scope="row">
