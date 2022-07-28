@@ -21,7 +21,7 @@
     $sql="exec sp_valida ".$varusu.", ".$varpwd;
     $stmt=sqlsrv_query( $conn, $sql);
 
-    while( $row = sqlsrv_fetch_array( $stmt2, SQLSRV_FETCH_ASSOC) ) {
+    while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
         echo $row['mensaje']."<br />";
     }
 
