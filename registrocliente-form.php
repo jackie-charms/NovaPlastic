@@ -25,7 +25,7 @@
         <form class="login100-form validate-form" action="profile.html" method="post">
           <span class="login100-form-title p-b-43">Registro de clientes!</span>
 <?php
-    $serverName = "172.16.22.106, 1433";
+    $serverName = "192.168.137.116, 1433";
     $connectionInfo = array("Database"=>"JAAPA", "UID"=>"JAAPAPAM", "PWD"=>"123");
     
     $varrz = $_POST["razonsocial"];

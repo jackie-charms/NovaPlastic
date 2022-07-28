@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
-    <title>Clientes - Capturista</title>
+    <title>Tabla Prueba</title>
   </head>
   <body>
   <div class="content">
@@ -37,7 +37,7 @@
           <tbody>
           <!-- CEO -->
           <?php
-            $serverName = "172.16.22.106, 1433";
+            $serverName = "192.168.137.116, 1433";
             $connectionInfo = array("Database"=>"JAAPA", "UID"=>"JAAPAPAM", "PWD"=>"123");
 
             $conn = sqlsrv_connect( $serverName, $connectionInfo );
