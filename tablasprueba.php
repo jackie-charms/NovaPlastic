@@ -30,13 +30,8 @@
             <tr> 
               <th scope="col">Id</th>
               <th scope="col">Razón Social</th>
-              <th scope="col">Calle</th>
+              <th scope="col">Dirección</th>
               <th scope="col">Teléfono</th>
-              <th scope="col">Colonia</th>
-              <th scope="col">Número Interior</th>
-              <th scope="col">Número Exterior</th>
-              <th scope="col">Codigo Postal</th>
-              <th scope="col">Pais</th>
               <th scope="col">Borrar</th>
             </tr>
           </thead>
@@ -57,10 +52,6 @@
             while ($nreg=sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC))
             {
                 printf("<tr><td>&nbsp;%s&nbsp;</td>
-                            <td>&nbsp;%s&nbsp;</td>
-                            <td>&nbsp;%s&nbsp;</td>
-                            <td>&nbsp;%s&nbsp;</td>
-                            <td>&nbsp;%s&nbsp;</td>
                             <td>&nbsp;%s&nbsp;</td>
                             <td>&nbsp;%s&nbsp;</td>
                             <td>&nbsp;%s&nbsp;</td>
