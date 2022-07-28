@@ -31,12 +31,11 @@
     $varrz = $_POST["razonsocial"];
     $varcalle = $_POST["calle"];
     $vartel = $_POST["telefono"];
-    $varcolonia = $_POST["colonia"];
     $varnumint = $_POST["numeroint"];
     $varnumext = $_POST["numeroext"];
+    $varcolonia = $_POST["colonia"];
     $varcp = $_POST["codpostal"];
     $varpais = $_POST["pais"];
-    $varnomcont = $_POST["nomcontacto"];
 
     $conn = sqlsrv_connect( $serverName, $connectionInfo );
     if( $conn === false ) {
