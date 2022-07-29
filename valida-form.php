@@ -32,7 +32,7 @@
             $varusu=$_POST["usuario"];
             $varpwd=$_POST["contra"];
             
-            $serverName = "192.168.100.52, 1433";
+            $serverName = "172.16.22.106, 1433";
             $connectionInfo = array("Database"=>"JAAPA", "UID"=>"JAAPAPAM", "PWD"=>"123");
             $conn = sqlsrv_connect( $serverName, $connectionInfo );
             if( $conn === false ) {
